@@ -261,14 +261,14 @@ export default function MultiContextPage() {
   }
 
   return (
-    <div className="w-full min-h-screen bg-slate-100 p-8">
+    <div className="w-full min-h-screen bg-slate-800 p-8">
       <h1 className="text-2xl font-bold mb-8 text-center">
         Zustand с множественными изолированными контекстами
       </h1>
 
       <div className="grid grid-cols-1 gap-8 max-w-5xl mx-auto">
         {/* Первый экземпляр хранилища */}
-        <div className="p-4 border-2 border-blue-300 rounded-lg">
+        <div className="p-4 border-2 border-blue-300 rounded-lg bg-blue-100">
           <h2 className="text-xl font-semibold mb-4 text-blue-700">
             Контекст 1 (Независимое хранилище)
           </h2>
@@ -281,7 +281,7 @@ export default function MultiContextPage() {
         </div>
 
         {/* Второй экземпляр хранилища */}
-        <div className="p-4 border-2 border-green-300 rounded-lg">
+        <div className="p-4 border-2 border-green-300 rounded-lg bg-green-100">
           <h2 className="text-xl font-semibold mb-4 text-green-700">
             Контекст 2 (Независимое хранилище)
           </h2>
