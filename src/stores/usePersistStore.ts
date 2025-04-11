@@ -94,6 +94,16 @@ export const usePersistStore = create<PersistStore>()(
           lastUpdated: state.lastUpdated,
         }),
 
+        // Пропустить гидратацию для серверного рендера
+        /**
+         * useEffect(() => {
+            // Запускаем гидратацию после маунта компонента
+            usePersistStore.persist.rehydrate()
+          }, [])
+         *
+         */
+        // skipHydration: true
+
         // Опциональные настройки
         version: 1,
         merge: (persistedState, currentState) => {
